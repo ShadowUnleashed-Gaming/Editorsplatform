@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h2>Admin Panel</h2>
+    <ul>
+        {% for user in users %}
+            <li>{{ user[1] }} - Active: {{ user[2] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
